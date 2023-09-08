@@ -835,6 +835,7 @@ main {
     background-color: #fff;
     display: inline-block;
     border-radius: 3px;
+    margin-left: auto;
 }
 }
 @media (min-width: 991px){
@@ -844,6 +845,7 @@ main {
     background-color: #fff;
     display: inline-block;
     border-radius: 3px;
+    margin-left: auto;
 }
 }
 
