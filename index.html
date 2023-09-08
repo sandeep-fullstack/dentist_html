@@ -811,26 +811,44 @@
 </html>
 
 <script>
-    const counters = document.querySelectorAll(".counter");
+ // JavaScript
+const counters = document.querySelectorAll(".counter");
 
-    counters.forEach((counter) => {
-        counter.innerText = "0";
-        const target = +counter.getAttribute("data-target");
-        const increment = target / 200;
-        let count = 0;
+const startCounterOnIntersection = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const counter = entry.target;
+      counter.innerText = "0";
+      const target = +counter.getAttribute("data-target");
+      const increment = target / 200;
+      let count = 0;
 
-        const updateCounter = () => {
-            if (count < target) {
-                count += increment;
-                counter.innerText = `${Math.ceil(count)}+`;
-                setTimeout(updateCounter, 1);
-            } else {
-                counter.innerText = `${target}+`;
-            }
-        };
+      const updateCounter = () => {
+        if (count < target) {
+          count += increment;
+          counter.innerText = `${Math.ceil(count)}+`;
+          requestAnimationFrame(updateCounter); // Use requestAnimationFrame for smoother animations
+        } else {
+          counter.innerText = `${target}+`;
+        }
+      };
 
-        updateCounter();
-    });
+      updateCounter();
+
+      // Unobserve the target element after starting the counter
+      observer.unobserve(counter);
+    }
+  });
+};
+
+const observer = new IntersectionObserver(startCounterOnIntersection, {
+  threshold: 0.1, // Adjust this threshold as needed
+});
+
+counters.forEach((counter) => {
+  observer.observe(counter);
+});
+
 
 
 </script>
