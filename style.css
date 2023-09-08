@@ -352,3 +352,488 @@ main {
     padding: 0 5px;
     display: grid;
 }
+.about_point_point{
+  box-shadow: 15px 0px 12px -6px rgba(58,11,67,255), -15px 0px 12px -6px rgba(58,11,67,255);
+}
+
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+  
+.counter-body {
+  background: linear-gradient(90deg, rgba(60,51,163,1) 0%, rgba(68,51,159,1) 35%, rgba(66,60,163,1) 100%);
+  color: #fff;
+  font-family: "Roboto Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.counter_container{
+  background: linear-gradient(90deg, rgba(60,51,163,1) 0%, rgba(68,51,159,1) 35%, rgba(66,60,163,1) 100%);
+}
+.counter_container h2 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.counter_container span{
+  font-size: 25px;
+  color: #fff;
+}
+
+
+@media (min-width: 768px) {
+  .offset_class {
+    margin-left: 33.33333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .offset_class {
+    margin-left:0%;
+  }
+}
+
+/* Remove offset for lg viewport size */
+@media (min-width: 1200px) {
+  .offset_class {
+    margin-left: 0;
+  }
+}
+
+.Patient_Speaks h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+.align-items-stretch{
+  text-align: -webkit-center;
+  justify-content: center;
+  
+}
+.view_more {
+  background: #f00 !important;
+  width: fit-content;
+}
+.why-choose>.container>h5 {
+  color: #fe235b;
+  font-size: 20px;
+}
+.why-choose h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.why-choose {
+  background: url(images/why-choose-us.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.why-choose p {
+  font-size: 17px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.why h5 {
+  font-size: 1.2rem;
+}
+.why-choose .why p {
+  color: #6d7a8c;
+}
+.why-choose .why {
+  margin: 25px 0;
+  box-shadow: 4px 8px 10px #372a72;
+  padding: 40px 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 260px;
+  width: 260px;
+  margin: 25px auto;
+}
+
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.img-area {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+}
+.review .carousel-caption h3 {
+  color: #fe235b;
+  font-size: 20px;
+}
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d;
+}
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: .875em;
+  color: #6c757d;
+}
+.item p .fa {
+  color: #fe235b;
+}
+.review .carousel-caption p {
+  font-size: 20px;
+  color: #6d7a8c;
+  font-style: italic;
+  font-weight: 400;
+  word-spacing: 1px;
+  line-spacing: 1px;
+}
+.advTechnology {
+  background: url(images/bg_1.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.advTechnology>.container>h5 {
+  color: #fff;
+  font-size: 20px;
+}
+.advTechnology .machine {
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all .6s;
+  padding: 10px;
+}
+.advTechnology .machine h4 {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 3px;
+  color: #fe235b;
+  font-family: 'Muli';
+  font-weight: 700;
+}
+.advTechnology>.container>h2 {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.advTechnology>.container>p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.advTechnology .machine img {
+  border-radius: 4px 4px 0 0;
+  transition: all .6s;
+  width: 100%;
+}
+.advTechnology .machine img{
+  border-radius: 4px 4px 0 0;
+  transition: all .6s;
+  width: 100%;
+}
+.advTechnology .machine:hover img {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 16px 2px #b8b8c970;
+  border-radius: 2px;
+  transition: all .6s;
+}
+
+
+
+
+
+
+
+.hygiene {
+  background-color: #fcfafa;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 767px){
+.hygiene {
+    padding: 0 15px;
+}
+}
+@media (max-width: 991px){
+.hygiene {
+    height: auto;
+}
+}
+
+.hygiene>.container>h5 {
+  color: #fe235b;
+  font-size: 20px;
+}
+.hygiene>.container>h2 {
+  color: #1a1a1c;
+  font-size: 45px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.hygiene>.container>p {
+  font-size: 20px;
+  color: #6d7a8c;
+  margin-bottom: 30px;
+}
+@media (max-width: 1024px){
+  #hygiene-part p {
+    line-height: 20px;
+}
+}
+
+#hygiene-part p {
+    color: #6d7a8c;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+@media (max-width: 767px){
+.hygines {
+    max-width: 100%;
+    margin: 20px;
+}
+}
+.hygines {
+    box-shadow: 0px 3px 10px #ccc;
+    padding: 15px 15px 0px;
+    margin: 0px;
+}
+@media (max-width: 767px){
+  .hygines img {
+    margin-bottom: 20px;
+}
+}
+
+.hygines img {
+    margin-bottom: 4px;
+    width: 100%;
+    position: relative;
+}
+
+#hygiene-part h4 {
+  color: #ffffff;
+  font-size: 17px;
+  top: 0px;
+  left: 15px;
+  background: #203762;
+  display: block!important;
+  width: 100%;
+  padding: 10px;
+}
+@media (max-width: 1024px){
+  .hygines h4 {
+    font-size: 15px !important;
+  }
+  
+}
+.hygiene>.container>h2 strong {
+  color: #fe1e5b;
+}
+#hygiene-part .hygines_txt {
+  font-size: 16px;
+  margin-left: -10px;
+}
+#hygiene-part p {
+  color: #6d7a8c;
+  line-height: 25px;
+  font-size: 18px;
+}
+@media (max-width: 1024px){
+.hygines_txt {
+    display: none;
+}
+}
+
+
+
+
+
+.more-review {
+  background: url(images/review_banner.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.more-review>.container>h2 {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.more-review .row>div {
+  margin-bottom: 10px;
+}
+.box.google-box {
+  border-top: 5px solid #f9b403;
+  background: white;
+}
+
+.more-review .row img {
+  transition: all .7s;
+}
+.more-review .row h5 {
+  color: #f4572e;
+}
+.box.google-box i, .box.google-box .color {
+  color: #f9b403;
+}
+
+.box.google-box i, .box.google-box .color {
+  color: #f9b403;
+}
+.box .color {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.box.justdial-box i, .box.justdial-box .color {
+  color: #ea4335;
+}
+.box.practo-box i, .box.practo-box .color {
+  color: #34a853;
+}
+.box h5 {
+  font-family: 'Muli', sans-serif;
+}
+
+
+
+
+
+.light_gray_bg {
+  background-color: #fffbf6;
+}
+.container_2 {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.heading h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 20px;
+  font-weight: 700;
+}
+.patient_speak_videos {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  display: contents;
+  margin: auto;
+}
+.patient_speak_videos .iframe-footer {
+  text-align: center;
+}
+.patient_speak_videos .iframe-footer {
+  position: relative;
+  /* display: none; */
+  background: #FBEBCC;
+}
+.iframe-footer {
+  background: #ff8001;
+  padding: 10px;
+  color: #fff;
+  margin-top: -2px;
+}
+
+
+
+
+
+
+@media (max-width: 991px){
+  .processing-contact-us-bg {
+    margin-top: 12rem;
+}
+}
+
+.footer-cta {
+  background-image: url(images/why-choose-us.png);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 260px;
+  padding: 40px 80px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0px #ecd256;
+  box-shadow: 5px 5px 0px #f6ce57;
+}
+
+.offer .ad-price, .ad-price {
+  background-color: #fe1e5b;
+  text-align: center;
+  font-size: 16px;
+  border: 2px dotted #fff;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 50%;
+  width: 180px;
+  display: inline-block;
+  text-transform: uppercase;
+  height: 180px;
+  padding-top: 42px;
+}
+.offer .ad-price, .ad-price {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.offer .ad-price span.rate, .ad-price span.rate {
+  font-size: 28px;
+  font-weight: 700;
+}
+.offer .ad-price a, .ad-price a {
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 100;
+  padding: 5px;
+}
+.footer-cta .cta-whitebox, .cta-whitebox {
+  width: 510px;
+  padding: 20px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: auto;
+}
+.cta-whitebox h2 {
+  font-size: 30px;
+  color: #003554;
+  margin-bottom: 6px;
+}
