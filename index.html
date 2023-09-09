@@ -158,35 +158,36 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/banner-3.jpg" alt="banner" width="100%" class="img-fluid">
+                        <img src="images/banner-3.jpg" alt="banner" width="100%" class="img-fluid banner">
                         <div class="container">
                             <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                <div class="caption p-4">
+                                    <span>ISO Certified and<br>Awarded Dental Clinic</span>
+                                </div>
+                                <p><a class="btn btn-lg btn1 mt-3" href="#">Get Affordable Treatment</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/banner-2.jpg" alt="banner" width="100%" class="img-fluid">
+                        <img src="images/banner-2.jpg" alt="banner" width="100%" class="img-fluid banner">
                         <div class="container">
                             <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                <div class="caption p-4">
+                                    <span>Our Passion is Designing<br>The Perfect Smile</span>
+                                </div>
+
+                                <p><a class="btn btn-lg btn1 mt-3" href="#">Exciting Offer On Appointment </a></p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/banner-1.jpg" alt="banner" width="100%" class="img-fluid">
+                        <img src="images/banner-1.jpg" alt="banner" width="100%" class="img-fluid banner">
                         <div class="container">
                             <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                                <div class="caption p-4">
+                                    <span>Best Dentist in Pune<br>and Pimpri Chinchwad</span>
+                                </div>
+                                <p><a class="btn btn-lg btn1 mt-3" href="#">Get Offer - Book Now</a></p>
                             </div>
                         </div>
                     </div>
@@ -1302,6 +1303,24 @@
 </body>
 </html>
 <script>
+    $(document).ready(function() {
+        // Set the time (in milliseconds) you want to wait before sliding to the next item
+        var autoSlideDelay = 100000; // 5000 milliseconds = 5 seconds
+
+        $('#myCarousel').carousel({
+            interval: false // Disable the automatic slide interval
+        });
+
+        function startAutoSlide() {
+            $('#myCarousel').carousel('next'); // Move to the next slide
+            setTimeout(startAutoSlide, autoSlideDelay); // Schedule the next slide
+        }
+
+        // Start the auto-slide initially
+        setTimeout(startAutoSlide, autoSlideDelay);
+    });
+</script>
+<script>
     function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -1365,22 +1384,35 @@
     })
 </script>
 <script>
-    let isAtTop = true; // Initialize a flag to track whether the page is at the top
+  let isAtTop = true; // Initialize a flag to track whether the page is at the top
 
-    function handleScroll() {
-        const navbar = document.getElementById('navbar');
-        const scrollY = window.scrollY;
+function handleScroll() {
+    const navbar = document.getElementById('navbar');
+    const scrollY = window.scrollY;
+    const screenWidth = window.innerWidth; // Get the current screen width
 
-        if (scrollY > 0) {
-            if (isAtTop) {
-                navbar.style.margin = '0px'; // Margin becomes 0 when scrolling starts
-                isAtTop = false; // Update the flag
+    if (scrollY > 0) {
+        if (isAtTop) {
+            // Check if the screen width is less than 1200px
+            if (screenWidth < 1200) {
+                navbar.style.margin = '0px'; // Margin becomes 0 when scrolling starts for small screens
+            } else {
+                navbar.style.margin = '0px'; // Margin is 20px when at the top for larger screens
             }
-        } else {
-            navbar.style.margin = '25px'; // Margin is 20px when at the top
-            isAtTop = true; // Update the flag
+            isAtTop = false; // Update the flag
         }
+    } else {
+        // Check if the screen width is less than 1200px
+        if (screenWidth < 1200) {
+            navbar.style.margin = '0px'; // Margin is 0px when at the top for small screens
+        } else {
+            navbar.style.margin = '25px'; // Margin is 20px when at the top for larger screens
+        }
+        isAtTop = true; // Update the flag
     }
+}
 
-    window.addEventListener('scroll', handleScroll);
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll); // Listen for window resize events
+
 </script>

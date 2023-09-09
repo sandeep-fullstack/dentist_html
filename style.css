@@ -131,6 +131,18 @@
   .bd-mode-toggle {
     z-index: 1500;
   }
+
+
+@media (max-width: 1200px){
+  #navbar {
+    transition: margin 0.7s; /* Adjust the transition duration as needed */
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: block;
+}
+}
+@media (min-width: 1200px){
   #navbar {
     transition: margin 0.7s; /* Adjust the transition duration as needed */
     margin: 25px;
@@ -138,6 +150,9 @@
     padding-bottom: 0px;
     display: block;
 }
+}
+
+
 
 
 
@@ -1242,10 +1257,101 @@ main {
   font-size: 18px;
 }
 .modal-header .btn-close {
- 
+
   color: #f00;
 
 }
+
+@media (min-width: 1150px){
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 7.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+}
+}
+@media (max-width: 1150px){
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 0.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+}
+}
+@media (max-width: 850px){
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+}
+}
+@media (max-width: 780px){
+.banner{
+  height: 45vh;
+}
+}
+
+.caption{
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  border: 0.1rem solid rgba(0, 0, 0, 0.7);
+}
+@media only screen and (max-width: 900px){
+  .caption span {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  
+}
+}
+
+@media only screen and (max-width: 600px){
+  .caption span {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  
+}
+
+}
+@media only screen and (min-width: 900px){
+.caption span {
+  font-size: 45px;
+  font-weight: bold;
+  text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+}
+
+.btn1{
+  background: #fe235b;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.btn1:hover  {
+  background: #6610f2;
+  color: white;
+}
+
+
 
 
 
