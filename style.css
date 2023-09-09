@@ -9,10 +9,19 @@
   
 }
 
+
+/* Center the text vertically */
+.dropdown-toggle::after {
+  display: none;
+}
+
 .custom-dropdown-menu {
   display: none; /* Hide the dropdown menu by default */
   position: absolute;
   z-index: 1;
+  width: max-content;
+  font-size: 13px;
+  font-weight: 600;
 }
 .dropdown-menu {
   margin-top: 20px;
@@ -21,11 +30,36 @@
 .custom-dropdown-menu {
   margin-top: 0;
   padding-top: 20px;
+  width: max-content;
+  font-size: 13px;
+  font-weight: 600;
 }
 
-/* Add a rule to display the dropdown menu on hover */
-.nav-item.dropdown:hover .custom-dropdown-menu {
-  display: block;
+@media (min-width: 1200px) {
+  .nav-item.dropdown:hover .custom-dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-item{
+    border-bottom: 1px solid #d8d8d8;
+  }
+  .nav-link{
+    display: flex;
+  }
+  .collapse_plus_icon{
+    margin-left: auto;
+    align-self: center;
+  }
+
+.collapse_icon{
+  color: rgb(211, 205, 205);
+ background-color:#efeff1;
+}
+.fa-circle-minus{
+  display: none;
+}
 }
 
 .nav-link{
@@ -45,10 +79,6 @@
   color: dark; /* Replace 'dark' with your desired color value, e.g., #333 */
 }
 
-.nav-item.dropdown:hover .custom-dropdown-menu {
-  display: block; /* Display the dropdown menu on hover */
-  
-}
 .nav-item {
   font-size: 14px;
   font-weight: 600;
@@ -1215,13 +1245,29 @@ main {
   font-size: 30px;
 }
 
-.overlay input {
-  border: 1px solid #fff;
-  margin-bottom: 0px;
-  padding: 2px;
-  border-radius: 4px;
-  outline: none;
+
+@media (min-width: 924px){
+  .overlay input {
+    border: 1px solid #fff;
+    margin-bottom: 0px;
+    padding: 2px;
+    border-radius: 4px;
+    outline: none;
+  }
 }
+
+@media (max-width: 924px){
+  .overlay input {
+    border: 1px solid #fff;
+    margin-bottom: 0px;
+    padding: 2px;
+    border-radius: 4px;
+    outline: none;
+    width: 100px;
+  }
+}
+
+
 .overlay .submitBtn {
   border-radius: 4px;
   border: none;
@@ -1235,6 +1281,7 @@ main {
 }
 .center_pop{
   align-self: center;
+  
 }
 .sidebar-contact h2 {
   margin: 0 0 20px;
