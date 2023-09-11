@@ -61,9 +61,10 @@
 
 <body>
     <section>
-        <nav class="navbar navbar-expand-xl navbar-dark fixed-top header-main" id="navbar"
-            aria-label="Fifth navbar example">
-            <div class="alert helpme alert-dismissible fade show" role="alert">
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top header-main" id="navbar" aria-label="Fifth navbar example">
+            <div class="alert  alert-dismissible fade show" role="alert">
+            <div class="container-fluid helpme" >
+            <div class="container">
                 <div class="row">
                     <div class="col-md-4  col-sm-10 col-10 center_pop  ps-5">
                         <p class="mb-0 small_sceen_pop">Leave your mobile number to get a call back.</p>
@@ -81,7 +82,7 @@
                             <div class=" col-7  center_pop">
                                 <span class="overlay">
                                     <input type="text" class="" placeholder="Mobile Number*">
-                                    <button type="button" class=" submitBtn mt-md-2 mt-sm-2">Submit</button>
+                                    <button type="button" class=" submitBtn mt-md-2 mt-sm-2 mt-lg-2 mt-xl-0">Submit</button>
                                 </span>
                             </div>
                             <div class="col-4 center_pop" style="display: contents;">
@@ -95,12 +96,23 @@
                     <div class="col-md-2 col-6 center_pop d-none d-md-block">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true"><i class="fa-sharp fa-solid fa-circle-xmark"
-                                    style="color: #deac73;"></i></span>
+                                    style="color: #deac73; font-size: 25px;"></i></span>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
+            </div>
+             </div>
+             <ul class="navbar-nav  pt-2 mb-2 mb-lg-0 Book_Appointment" >
+                <li class="nav-item text-center">
+                    <i class="fa-solid fa-calendar-days  fs-4 calendar" aria-hidden="true" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"></i>
+                    <p class="mb-0 calendar"><strong data-bs-toggle="modal" data-bs-target="#exampleModal"> Book
+                            Appointment</strong></p>
+                </li>
+            </ul>
+          
+            <div class="container" style="margin-right: 0px;">
                 <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -214,14 +226,6 @@
 
                     </ul>
                 </div>
-                <ul class="navbar-nav  pt-2 mb-2 mb-lg-0 Book_Appointment">
-                    <li class="nav-item text-center">
-                        <i class="fa-solid fa-calendar-days  fs-4 calendar" aria-hidden="true" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"></i>
-                        <p class="mb-0 calendar"><strong data-bs-toggle="modal" data-bs-target="#exampleModal"> Book
-                                Appointment</strong></p>
-                    </li>
-                </ul>
             </div>
         </nav>
     </section>
@@ -1566,7 +1570,7 @@
             if (screenWidth < 1200) {
                 navbar.style.margin = '0px'; // Margin is 0px when at the top for small screens
             } else {
-                navbar.style.margin = '25px'; // Margin is 20px when at the top for larger screens
+                navbar.style.margin = '2%'; // Margin is 20px when at the top for larger screens
             }
             isAtTop = true; // Update the flag
         }
