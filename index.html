@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gobestdentist</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+ <!-- Include Bootstrap 5 CSS and JS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+ integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+ integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+ crossorigin="anonymous"></script>
 
-    <link href="style.css" rel="stylesheet">
-    <link href="font-awesome.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<link href="font-awesome.css" rel="stylesheet">
+
+
     <style>
         .navbar-dark .navbar-nav .nav-link.active,
         .navbar-dark .navbar-nav .show>.nav-link {
@@ -59,11 +65,11 @@
             aria-label="Fifth navbar example">
             <div class="alert helpme alert-dismissible fade show" role="alert">
                 <div class="row">
-                    <div class="col-md-4 col-6 center_pop  ps-5">
-                        <p class="mb-0">Leave your mobile number to get a call back.</p>
+                    <div class="col-md-4  col-sm-10 col-10 center_pop  ps-5">
+                        <p class="mb-0 small_sceen_pop">Leave your mobile number to get a call back.</p>
                     </div>
 
-                    <div class="col-md-2 col-6 center_pop pe-4 d-md-none" style="text-align: right;">
+                    <div class="col-md-2 col-2  col-sm-2 center_pop pe-4 d-md-none" style="text-align: right;">
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true"><i class="fa-sharp fa-solid fa-circle-xmark"
                                     style="color: #deac73;"></i></span>
@@ -72,7 +78,7 @@
 
                     <div class="col-md-6 col-12 center_pop ps-5">
                         <div class="row">
-                            <div class=" col-8  center_pop">
+                            <div class=" col-7  center_pop">
                                 <span class="overlay">
                                     <input type="text" class="">
                                     <button type="button" class=" submitBtn mt-md-2 mt-sm-2">Submit</button>
@@ -94,14 +100,13 @@
                 </div>
             </div>
             <div class="container-fluid">
-
-                <a class="navbar-brand my-1" href=""><img src="images/img_logo_new.png" alt="img_logo_new" width="150"
-                        class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class=""><i class="fa-sharp fa-solid fa-bars fs-2" style="color: #eb235b;"></i></span>
-                </button>
+                data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class=""><i class="fa-sharp fa-solid fa-bars fs-2" style="color: #eb235b;"></i></span>
+            </button>
+                <a class="navbar-brand my-1" href=""><img src="images/img_logo_new.png" alt="img_logo_new" 
+                        class="img-fluid img_logo_new"></a>
 
                 <div class="collapse navbar-collapse navigation" id="navbarsExample05">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0">
@@ -111,17 +116,17 @@
 
                         <li class="nav-item dropdown"> <!-- Hide on xl screens -->
                             <div class="d-flex">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#ABOUT_US" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#ABOUT_US" aria-expanded="false" id="ABOUT">
                                     ABOUT US
                                 </a>
                                 <div class="collapse_plus_icon">
                                     <span class="plus-icon d-xl-none">
-                                        <i class="fa-solid fa-circle-minus  fs-3 click_icon"></i>
-                                        <i class="fa-solid fa-circle-plus fs-3 collapse_icon click_icon" data-bs-toggle="collapse" data-bs-target="#ABOUT_US" aria-expanded="false"></i>
-                                    </span>
+                                        <i class="fa-solid fa-circle-minus fs-3 click_icon d-none" id="ABOUT_US_minus" style="color:#5d3a19;" onclick="changeText()" data-bs-toggle="collapse" data-bs-target="#ABOUT_US" aria-expanded="false"></i>
+                                        <i class="fa-solid fa-circle-plus fs-3 collapse_icon click_icon" id="ABOUT_US_plus" onclick="changeText()" data-bs-toggle="collapse" data-bs-target="#ABOUT_US" aria-expanded="false"></i>
+                                         </span>
                                 </div>
                             </div>
-                            <ul class="dropdown-menu custom-dropdown-menu collapse" id="ABOUT_US" aria-labelledby="ABOUT_US">
+                            <ul class="dropdown-menu custom-dropdown-menu collapse" id="ABOUT_US" aria-labelledby="ABOUT_US" style="">
                                 <li><a class="nav-link" href="#">Item 1</a></li>
                                 <li><a class="nav-link" href="#">Item 2</a></li>
                                 <li><a class="nav-link" href="#">Item 3</a></li>
@@ -130,13 +135,13 @@
 
                         <li class="nav-item dropdown"> <!-- Hide on xl screens -->
                             <div class="d-flex">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#TREATMENT_US" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#TREATMENT_US" aria-expanded="false" id="TREATMENT">
                                     TREATMENT
                                 </a>
                                 <div class="collapse_plus_icon">
                                     <span class="plus-icon d-xl-none">
-                                        <i class="fa-solid fa-circle-minus  fs-3 click_icon"></i>
-                                        <i class="fa-solid fa-circle-plus fs-3 collapse_icon click_icon" data-bs-toggle="collapse" data-bs-target="#TREATMENT_US" aria-expanded="false"></i>
+                                        <i class="fa-solid fa-circle-minus fs-3 click_icon d-none" id="TREATMENT_US_minus" style="color:#5d3a19;" onclick="TREATMENT_US()" data-bs-toggle="collapse" data-bs-target="#TREATMENT_US" aria-expanded="false"></i>
+                                        <i class="fa-solid fa-circle-plus fs-3 collapse_icon click_icon" id="TREATMENT_US_plus" onclick="TREATMENT_US()" data-bs-toggle="collapse" data-bs-target="#TREATMENT_US" aria-expanded="false"></i>
                                     </span>
                                 </div>
                             </div>
@@ -163,10 +168,8 @@
                                 <li><a class="nav-link" href="#">Tooth Whitening</a></li>
                             </ul>
                         </li>
+
                         
-
-               
-
                         <li class="nav-item">
                             <a class="nav-link" href="#">OUR DOCTORS</a>
                         </li>
@@ -1494,22 +1497,34 @@
 </script>
 <script>
 
-function toggleDropdownIcons() {
-    const dropdown = document.getElementById("ABOUT_US"); 
-    const icons = document.querySelectorAll(".plus-icon i");
-alert("hii");
-    if (dropdown.classList.contains("show")) {
-        icons[0].classList.toggle("d-none", true); 
-        icons[1].classList.toggle("d-none", false); 
-    } else {
-        icons[0].classList.toggle("d-none", false); 
-        icons[1].classList.toggle("d-none", true); 
+
+
+
+</script>
+<script>
+   function changeText() {
+    const plusIcon = document.querySelector("#ABOUT_US_plus");
+        const minusIcon = document.querySelector("#ABOUT_US_minus");
+
+        // Toggle the icons
+        plusIcon.classList.toggle("d-none");
+        minusIcon.classList.toggle("d-none"); ABOUT_US
+        document.getElementById("ABOUT").style.color = "#5d3a19";
+        document.getElementById("TREATMENT").style.color = "#000000c4";
+        document.getElementById("ABOUT_US").style.marginLeft = "22px";
     }
-}
+    function TREATMENT_US() {
+    const plusIcon = document.querySelector("#TREATMENT_US_plus");
+        const minusIcon = document.querySelector("#TREATMENT_US_minus");
 
+        // Toggle the icons
+        plusIcon.classList.toggle("d-none");
+        minusIcon.classList.toggle("d-none");
+        document.getElementById("TREATMENT").style.color = "#5d3a19";
+        document.getElementById("ABOUT").style.color = "#000000c4";
+        document.getElementById("TREATMENT_US").style.marginLeft = "22px";
+    }
 
-const dropdownButton = document.querySelector(".click_icon");
-dropdownButton.addEventListener("click", toggleDropdownIcons);
-
+    
 
 </script>

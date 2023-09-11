@@ -43,7 +43,7 @@
 
 @media (max-width: 1200px) {
   .nav-item{
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid rgb(15 15 15 / 33%);
   }
   .nav-link{
     display: flex;
@@ -57,9 +57,7 @@
   color: rgb(211, 205, 205);
  background-color:#efeff1;
 }
-.fa-circle-minus{
-  display: none;
-}
+
 }
 
 .nav-link{
@@ -1400,6 +1398,27 @@ main {
   background: #6610f2;
   color: white;
 }
+
+@media (max-width: 380px){
+  .img_logo_new{
+    width: 100px;
+  }
+  .small_sceen_pop{
+    font-size: 15px;
+  }
+ 
+}
+
+@media (min-width: 380px){
+  .img_logo_new{
+    width: 150px;
+  }
+  .small_sceen_pop{
+
+  }
+ 
+}
+
 
 
 
