@@ -103,16 +103,9 @@
             </div>
             </div>
              </div>
-             <ul class="navbar-nav  pt-2 mb-2 mb-lg-0 Book_Appointment" >
-                <li class="nav-item text-center">
-                    <i class="fa-solid fa-calendar-days  fs-4 calendar" aria-hidden="true" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal"></i>
-                    <p class="mb-0 calendar"><strong data-bs-toggle="modal" data-bs-target="#exampleModal"> Book
-                            Appointment</strong></p>
-                </li>
-            </ul>
-          
-            <div class="container" style="margin-right: 0px;">
+           
+        
+            <div class="container-fluid" style="margin-right: 0px;">
                 <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -226,7 +219,16 @@
 
                     </ul>
                 </div>
+                <ul class="navbar-nav  pt-2 mb-2 mb-lg-0 Book_Appointment" >
+                    <li class="nav-item text-center" style="border:none;">
+                        <i class="fa-solid fa-calendar-days  fs-4 calendar" aria-hidden="true" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"></i>
+                        <p class="mb-0 calendar"><strong data-bs-toggle="modal" data-bs-target="#exampleModal"> Book
+                                Appointment</strong></p>
+                    </li>
+                </ul>
             </div>
+      
         </nav>
     </section>
 
@@ -1093,26 +1095,24 @@
 
             <div class="full-footer-in">
                 <div class="links-box">
-                    <div class="links-comman-box  toggle-mbl cll">
+                    <div class="links-comman-box  toggle-mbl cll" id="call_tel">
                         <h4>Call us on <a href="tel:+917264889986"
-                                style="color: #ffffff;font-family:sans-sarif;font-size: initial;"> 7264889986</a></h4>
-                        <div class="call-t">
-                            <ul>
+                                style="color: #ffffff;font-family:sans-sarif;font-size: initial;"> 7264889986</a> <span id="call_tIcon">+</span></h4>
+                                
+                                <div class="call-t call_tel_container">
+                               <ul>
                                 <li><a href="tel:+917264889986"
                                         style="color: #ffffff;font-family:sans-sarif;font-size: initial;"><i
                                             class="fa fa-phone" aria-hidden="true"></i> 7264889986</a></li>
                             </ul>
-                        </div>
+                            
+                     </div>
                     </div>
 
-                    <div class="links-comman-box toggle-mbl h4">
-                        <h4 class="h4">Branches</h4>
-                        <div class="menu-clove-advantage-container" style="display:block;">
+                    <div class="links-comman-box toggle-mbl h4" id="branchesToggle">
+                        <h4 class="h4">Branches <span id="branchesToggleIcon">+</span></h4>
+                        <div class="menu-clove-advantage-container" >
                             <ul id="menu-clove-advantage" class="menu">
-
-                                <!-- <li id="menu-item-3009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3009"><a href="dentist-near-me/index.html">Clove Clinics</a></li> -->
-
-
                                 <li id="menu-item-12292"
                                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12292"><a
                                         href="dentist-near-me-akurdi-nigdi-pradhikaran.php"
@@ -1185,8 +1185,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="links-comman-box toggle-mbl">
-                        <h4>MENU</h4>
+                    <div class="links-comman-box toggle-mbl"  id="menuToggle">
+                        <h4>MENU <span id="menuToggleIcon">+</span></h4>
                         <div class="menu-about-container">
                             <ul id="menu-about" class="menu">
                                 <li id="menu-item-632"
@@ -1208,8 +1208,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="links-comman-box toggle-mbl">
-                        <h4>USEFUL LINKS </h4>
+                    <div class="links-comman-box toggle-mbl" id="USEFUL_LINKS">
+                        <h4>USEFUL LINKS  <span id="USEFUL_LINKS_Icon">+</span></h4>
                         <div class="menu-usefull-links-container">
                             <ul id="menu-usefull-links" class="menu">
                                 <li id="menu-item-8156"
@@ -1236,8 +1236,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="links-comman-box toggle-mbl">
-                        <h4>Treatments</h4>
+                    <div class="links-comman-box toggle-mbl" id="Treatments_footer">
+                        <h4>Treatments <span id="Treatments_footer_Icon">+</span></h4>
                         <div class="menu-join-clove-container">
                             <ul id="menu-join-clove" class="menu">
                                 <li id="menu-item-7235"
@@ -1324,14 +1324,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="links-comman-box toggle-mbl">
-                        <h4>Popular Searches</h4>
-                        <div class="call-t">
+                    <div class="links-comman-box toggle-mbl"  id="Popular_Searches">
+                        <h4>Popular Searches <span id="Popular_Searches_Icon">+</span></h4>
+                        <div class="call-t Popular_Searches_contanier">
                             <ul>
-                                <!--<li><i class="fa fa-phone" aria-hidden="true"></i> Akurdi <span><a href="tel:00000000"  onclick="ga('send','event','footer','click','website', 1);">00000000</a></span></li>
-<li><i class="fa fa-phone" aria-hidden="true"></i> Wakad <span><a href="tel:00000000"  onclick="ga('send','event','footer','click','website', 1);">00000000</a></span></li>
-<li><i class="fa fa-phone" aria-hidden="true"></i> Baner <span><a href="tel:00000000"  onclick="ga('send','event','footer','click','website', 1);">00000000</a></span></li>
-<li><i class="fa fa-phone" aria-hidden="true"></i> Pimple <span><a href="tel:00000000"  onclick="ga('send','event','footer','click','website', 1);">00000000</a></span></li>-->
                                 <li id="menu-item-7236"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7236"><a
                                         href="#">Best Dentist in Wakad </a></li>
@@ -1589,7 +1585,6 @@
         })
     })()
 </script>
-
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const showSidebarButton = document.getElementById("showSidebarButton");
@@ -1605,8 +1600,6 @@
         });
     });
 </script>
-
-
 <script>
     function changeText() {
         const plusIcon = document.querySelector("#ABOUT_US_plus");
@@ -1632,4 +1625,94 @@
     }
 
 
+</script>
+<script> 
+
+
+const call_tToggle = document.getElementById("call_tel"); 
+    const call_t = document.getElementById("call_tIcon");
+    const call_tel_container = document.querySelector(".call_tel_container");
+
+    call_tToggle.addEventListener("click", function() {
+        if (call_tel_container.style.display === "none" || call_tel_container.style.display === "") {
+            call_tel_container.style.display = "block";
+            call_t.textContent = "-";
+        } else {
+            call_tel_container.style.display = "none";
+            call_t.textContent = "+";
+        }
+    });
+
+
+    const branchesToggle = document.getElementById("branchesToggle"); 
+    const branchesToggleIcon = document.getElementById("branchesToggleIcon");
+    const branchesContainer = document.querySelector(".menu-clove-advantage-container");
+
+    branchesToggle.addEventListener("click", function() {
+        if (branchesContainer.style.display === "none" || branchesContainer.style.display === "") {
+            branchesContainer.style.display = "block";
+            branchesToggleIcon.textContent = "-";
+        } else {
+            branchesContainer.style.display = "none";
+            branchesToggleIcon.textContent = "+";
+        }
+    });
+
+    // JavaScript to toggle MENU content
+    const menuToggle = document.getElementById("menuToggle");
+    const menuToggleIcon = document.getElementById("menuToggleIcon");
+    const menuContainer = document.querySelector(".menu-about-container");
+
+    menuToggle.addEventListener("click", function() {
+        if (menuContainer.style.display === "none" || menuContainer.style.display === "") {
+            menuContainer.style.display = "block";
+            menuToggleIcon.textContent = "-";
+        } else {
+            menuContainer.style.display = "none";
+            menuToggleIcon.textContent = "+";
+        }
+    });
+
+    const USEFUL_LINKS = document.getElementById("USEFUL_LINKS");
+    const USEFUL_LINKSIcon = document.getElementById("USEFUL_LINKSIcon");
+    const menuusefulllinkscontainer = document.querySelector(".menu-usefull-links-container");
+
+    USEFUL_LINKS.addEventListener("click", function() {
+        if (menuusefulllinkscontainer.style.display === "none" || menuusefulllinkscontainer.style.display === "") {
+            menuusefulllinkscontainer.style.display = "block";
+            USEFUL_LINKSIcon.textContent = "-";
+        } else {
+            menuusefulllinkscontainer.style.display = "none";
+            USEFUL_LINKSIcon.textContent = "+";
+        }
+    });
+
+    
+    const Treatments_footer = document.getElementById("Treatments_footer");
+    const Treatments_footer_Icon = document.getElementById("Treatments_footer_Icon");
+    const menujoinclovecontainer = document.querySelector(".menu-join-clove-container");
+
+    Treatments_footer.addEventListener("click", function() {
+        if (menujoinclovecontainer.style.display === "none" || menujoinclovecontainer.style.display === "") {
+            menujoinclovecontainer.style.display = "block";
+            Treatments_footer_Icon.textContent = "-";
+        } else {
+            menujoinclovecontainer.style.display = "none";
+            Treatments_footer_Icon.textContent = "+";
+        }
+    });
+
+    const Popular_Searches = document.getElementById("Popular_Searches");
+    const Popular_Searches_Icon = document.getElementById("Popular_Searches_Icon");
+    const Popular_Searches_contanier = document.querySelector(".Popular_Searches_contanier");
+
+    Popular_Searches.addEventListener("click", function() {
+        if (Popular_Searches_contanier.style.display === "none" || Popular_Searches_contanier.style.display === "") {
+            Popular_Searches_contanier.style.display = "block";
+            Popular_Searches_Icon.textContent = "-";
+        } else {
+            Popular_Searches_contanier.style.display = "none";
+            Popular_Searches_Icon.textContent = "+";
+        }
+    });
 </script>

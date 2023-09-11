@@ -1125,9 +1125,10 @@ main {
   font-size: 16px;
   color: #f86c04;
   font-weight: 600;
-  margin-bottom: 25px;
   text-transform: uppercase;
   margin-left: 21px;
+  border-bottom: 1px solid #ff6c00;
+  padding-bottom: 15px;
 }
 
 
@@ -1558,7 +1559,32 @@ main {
   border: 0px solid transparent;
   border-radius: 0rem;
 }
+.toggle-mbl h4 {
+  cursor: pointer;
+}
 
+@media (max-width: 767px){
+.toggle-mbl .menu-about-container, 
+.toggle-mbl .menu-clove-advantage-container,
+.toggle-mbl .menu-usefull-links-container,
+.toggle-mbl .menu-join-clove-container,
+.toggle-mbl .Popular_Searches_contanier,
+.toggle-mbl .call_tel_container{
+  display: none;
+}
+.box {
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0%);
+  padding: 15px 20px;
+}
+.toggle-mbl #USEFUL_LINKS_Icon,
+.toggle-mbl #call_tIcon,
+.toggle-mbl #branchesToggleIcon,
+.toggle-mbl #menuToggleIcon,
+.toggle-mbl #Treatments_footer_Icon,
+.toggle-mbl #Popular_Searches_Icon{
+  float: right !important;
+  font-size: 28px;
+}
 
-
+}
 
