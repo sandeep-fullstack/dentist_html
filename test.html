@@ -1,52 +1,124 @@
-<section>
-    <nav class="navbar navbar-expand-xl navbar-dark fixed-top header-main" id="navbar"
-        aria-label="Fifth navbar example">
-        <div class="container-fluid">
-            <a class="navbar-brand" href=""><img src="images/img_logo_new.png" alt="img_logo_new" width="150"
-                    class="img-fluid"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<div class="container-fluid mx-0 px-0 d-block d-md-none" style="margin-right: 0px; background-color: #452c20;">
+    <div class="row" style="width:100%;">
+      <div class="col-2   col-md-1" style="align-self: center;">
+      <button class="navbar-toggler d-block d-xl-none" type="button" data-bs-toggle="collapse"
+         data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false"
+         aria-label="Toggle navigation" style="padding: 0px;margin: auto;">
+      <span class=""><i class="fa-solid fa-bars fs-2" style="color: #eb235b;"></i></span>
+      </button>
+    </div>
 
-            <div class="collapse navbar-collapse" id="navbarsExample05">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/ABOUT US">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TREATMENT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">OUR DOCTORS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CAREERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">REVIEW</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">OUR BRANCHES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US</a>
-                    </li>
-
-                </ul>
-            </div>
-            <ul class="navbar-nav  pt-2 mb-2 mb-lg-0 Book_Appointment">
-                <li class="nav-item text-center">
-                    <i class="fa fa-calendar fs-4" aria-hidden="true"></i>
-                    <p class="mb-0">Book Appointment</p>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</section>
+    <div class="col-10   col-md-11 py-1 my-2" style="background-color: white;">
+      <a class="navbar-brand my-1" href=""><img src="images/img_logo_new.png" alt="img_logo_new"
+         class="img-fluid img_logo_new"></a>
+   
+      <div class="collapse navbar-collapse navigation" id="navbarsExample05">
+         <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link " aria-current="page" href="/" style=" font-size: 16px;">Home</a>
+               <span class="nav_link_border"></span>
+            </li>
+            <li class="nav-item dropdown">
+               <!-- Hide on xl screens -->
+               <div class="d-flex">
+                  <a class="nav-link dropdown-toggle " data-bs-toggle="collapse"
+                     data-bs-target="#ABOUT_US" aria-expanded="false" id="ABOUT">
+                  ABOUT US
+                  </a>
+                  <span class="nav_link_border"></span>
+                  <div class="collapse_plus_icon">
+                     <span class="plus-icon d-xl-none">
+                     <i class="fa-solid fa-circle-minus fs-3 click_icon d-none" id="ABOUT_US_minus"
+                        style="color:#5d3a19;" onclick="changeText()" data-bs-toggle="collapse"
+                        data-bs-target="#ABOUT_US" aria-expanded="false"></i>
+                     <i class="fa-solid fa-circle-plus fs-3 collapse_icon click_icon"
+                        id="ABOUT_US_plus" onclick="changeText()" data-bs-toggle="collapse"
+                        data-bs-target="#ABOUT_US" aria-expanded="false"></i>
+                     </span>
+                  </div>
+               </div>
+               <ul class="dropdown-menu custom-dropdown-menu collapse" id="ABOUT_US"
+                  aria-labelledby="ABOUT_US" style="">
+                  <li><a class="nav-link" href="#">Item 1</a></li>
+                  <li><a class="nav-link" href="#">Item 2</a></li>
+                  <li><a class="nav-link" href="#">Item 3</a></li>
+               </ul>
+            </li>
+            <li class="nav-item dropdown">
+               <!-- Hide on xl screens -->
+               <div class="d-flex">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="collapse"
+                     data-bs-target="#TREATMENT_US" aria-expanded="false" id="TREATMENT">
+                  TREATMENT
+                  </a>
+                  <span class="nav_link_border"></span>
+                  <div class="collapse_plus_icon">
+                     <span class="plus-icon d-xl-none">
+                     <i class="fa-solid fa-circle-minus fs-3 click_icon d-none"
+                        id="TREATMENT_US_minus" style="color:#5d3a19;" onclick="TREATMENT_US()"
+                        data-bs-toggle="collapse" data-bs-target="#TREATMENT_US"
+                        aria-expanded="false"></i>
+                     <i class="fa-solid fa-circle-plus fs-3 collapse_icon click_icon"
+                        id="TREATMENT_US_plus" onclick="TREATMENT_US()" data-bs-toggle="collapse"
+                        data-bs-target="#TREATMENT_US" aria-expanded="false"></i>
+                     </span>
+                  </div>
+               </div>
+               <ul class="dropdown-menu custom-dropdown-menu collapse" id="TREATMENT_US"
+                  aria-labelledby="TREATMENT_US">
+                  <li><a class="nav-link" href="#">Root Canal Treatment</a></li>
+                  <li><a class="nav-link" href="#">Crown and Bridges</a></li>
+                  <li><a class="nav-link" href="#">Braces- Orthodontic Treatment </a></li>
+                  <li><a class="nav-link" href="#">Scaling/Polishing </a></li>
+                  <li><a class="nav-link" href="#">Children/Pediatric dentistry</a></li>
+                  <li><a class="nav-link" href="#">Dental cavity and Fillings</a></li>
+                  <li><a class="nav-link" href="#">Tooth Extraction</a></li>
+                  <li><a class="nav-link" href="#">Dental implants</a></li>
+                  <li><a class="nav-link" href="#">Invisalign/Clear Aligners</a></li>
+                  <li><a class="nav-link" href="#">Dental care and hygiene</a></li>
+                  <li><a class="nav-link" href="#">Oral and Maxillofacial Surgery</a></li>
+                  <li><a class="nav-link" href="#">Flexible Partial/Complete Dentures</a></li>
+                  <li><a class="nav-link" href="#">Teeth Discoloration/Stained teeth</a></li>
+                  <li><a class="nav-link" href="#">Teeth Sensitivity</a></li>
+                  <li><a class="nav-link" href="#">Cosmetic Dentistry</a></li>
+                  <li><a class="nav-link" href="#">Dental X-ray</a></li>
+                  <li><a class="nav-link" href="#">Full Mouth Rehabilitation</a></li>
+                  <li><a class="nav-link" href="#">Flap Surgery and Gum Treatment</a></li>
+                  <li><a class="nav-link" href="#">Wisdom tooth Extraction</a></li>
+                  <li><a class="nav-link" href="#">Tooth Whitening</a></li>
+               </ul>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">OUR DOCTORS</a>
+               <span class="nav_link_border"></span>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">CAREERS</a>
+               <span class="nav_link_border"></span>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">REVIEW</a>
+               <span class="nav_link_border"></span>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">OUR BRANCHES</a>
+               <span class="nav_link_border"></span>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">CONTACT US</a>
+               <span class="nav_link_border"></span>
+            </li>
+         </ul>
+      </div>
+      <ul class="navbar-nav  pt-2 mb-2 mb-lg-0 Book_Appointment">
+         <li class="nav-item text-center" style="border:none;">
+            <i class="fa-solid fa-calendar-days  fs-4 calendar" aria-hidden="true" data-bs-toggle="modal"
+               data-bs-target="#exampleModal"></i>
+            <p class="mb-0 calendar"><strong data-bs-toggle="modal" data-bs-target="#exampleModal"> Book
+               Appointment</strong>
+            </p>
+         </li>
+      </ul>
+    </div>
+    </div>
+   </div>
