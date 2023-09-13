@@ -951,9 +951,37 @@ main {
     border-radius: 6px; /* Rounded corners for the thumb */
 }
 
-.cross_icon{
-    font-size: 20px;
+.cross_icon {
+    color: #deac73;
+    font-size: 25px;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    background: white!important;
+    top: 2px!important;
+    right: 2px!important;
+    color: black!important;
+    font-size: 13px!important;
+    width: 27px!important;
+    height: 27px!important;
+    padding-top: 6px;
+    margin-right: 20px;
+    border-radius: 50%;
+    text-align: -webkit-center;
+    border: 2px solid black;
+    cursor: pointer;
 }
+.cross_icon:hover {
+    background-color: rgb(245, 239, 239)!important;
+    cursor: pointer;
+    opacity: .9;
+}
+
+
 
 .symt-treatments_h {
     padding-bottom: 30px;
