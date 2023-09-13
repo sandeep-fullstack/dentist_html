@@ -1265,6 +1265,10 @@ button, input, optgroup, select, textarea {
     }
     .SYMPTOMS_TREATMENTS_content_text{
         font-size: 7px;
+        font-weight: 600;
+         color: #452c20;
+         font-family: 'Raleway', sans-serif;
+        justify-content: center;
     }
 }
 @media (min-width: 767px){
