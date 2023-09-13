@@ -440,6 +440,7 @@
    </div>
 </section>
 
+
 <section>
    <div class="container-fluid">
       <p class="SYMPTOMS_TREATMENTS_heading mt-5">SYMPTOMS & TREATMENTS</p>
@@ -1448,3 +1449,50 @@
       </div>
    </div>
 </div>
+<section>
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog sidebar-contact">
+         <div class="modal-content">
+            <div class="modal-header text-center">
+               <h1 class="modal-title fs-3 text-center" id="exampleModalLabel">Book An Appointment</h1>
+               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-sharp fa-solid fa-circle-xmark cross_icon" style="color: #deac73;"></i>
+               </button>
+            </div>
+            <div class="modal-body">
+               <form method="post" action="formaction.php" id="bookForm">
+                  <input type="text" name="name" placeholder="Name" required="">
+                  <input type="text" name="PhoneNumber" class="sideinputphone" minlength="10" maxlength="10"
+                     placeholder="Phone Number" required="">
+                  <span id="sidephone" style="display:block"></span>
+                  <select class="" name="branch">
+                     <option selected="">Select Branch</option>
+                     <option value="Akurdi">Akurdi Branch</option>
+                     <option value="Wakad">Wakad Branch</option>
+                     <option value="Baner">Baner Branch</option>
+                     <option value="Pimple">Pimple Saudagar Branch</option>
+                     <option value="Hinjewadi">Hinjewadi Branch</option>
+                     <option value="VimanNagar">Viman Nagar</option>
+                     <option value="Kharadi">Kharadi Branch</option>
+                     <option value="Ichalkaranji">Ichalkaranji Branch</option>
+                  </select>
+                  <textarea name="comments" placeholder="Message here.." id="message" required=""></textarea>
+                  <div style="display:flex;">
+                     <input name="date" style="text-align:center;width:50%"
+                        class="form-control input-group date input-group-addon" type="text" id="VisitorDtime2"
+                        value="09-09-2023" required="">
+                     <input name="time" style="text-align:center;width:50%"
+                        class="form-control input-group date input-group-addon" type="text" id="Visitortime2"
+                        value="03:43 pm" required="">
+                     <div id="bookForm1"></div>
+                  </div>
+                  <input type="submit" name="submit" class="subside" value="Make Your Appointment" onclick="fun()"
+                     required="">
+               </form>
+            </div>
+            <div class="modal-footer">
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
