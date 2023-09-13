@@ -1144,7 +1144,7 @@ main {
         width: 100px;
     }
     .small_sceen_pop {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
 @media (min-width: 380px) {
