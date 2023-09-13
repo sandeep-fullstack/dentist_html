@@ -361,14 +361,29 @@ main {
     color: #fe235b;
     font-size: 20px;
 }
+.about-info h5{
+    font-weight: 700;
+    font-size: 1.3rem !important;
+}
 .about-info h2 {
     color: #0f094f;
-    font-size: 40px;
     text-align: left !important;
     font-weight: 700;
+    font-size: 1.4rem !important;
+}
+@media (min-width: 991px) {
+    .about-info h2 {
+        font-size: 40px;
+    }
+    .about-info p {
+        font-size: 17px;
+    }
+    .counter_container h2 {
+        font-size: 40px;
+
+    }
 }
 .about-info p {
-    font-size: 17px;
     color: #6d7a8c;
     line-height: 30px;
 }
@@ -399,7 +414,6 @@ main {
     color: #fff;
 }
 .counter {
-    font-size: 60px;
     margin-top: 10px;
 }
 .counter-body {
@@ -413,14 +427,50 @@ main {
     margin: 0;
 }
 .counter_container h2 {
-    font-size: 40px;
+    font-weight: 700;
     color: #fff;
     text-align: center;
 }
+@media (max-width: 1024px){
+    h2 {
+        font-size: 1.4rem !important;
+    }
+}
+@media (max-width: 1024px){
+    .iframe-video {
+        width: 150px !important;
+        height: 180px !important;
+    }
+}
+
+
 .counter_container span {
     font-size: 25px;
     color: #fff;
 }
+
+@media (min-width: 767px){
+    .counter{
+        font-size: 50px;
+    }
+}
+
+.counter{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Anton';
+    letter-spacing: 1.5px;
+}
+
+@media (max-width: 1024px){
+    .image2 {
+        width: 100px !important;
+    }
+}
+
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
@@ -484,6 +534,21 @@ main {
 .why-choose {
     background: url(images/why-choose-us.png) center center/cover no-repeat fixed;
 }
+
+
+.why-choose .why p {
+    color: #6d7a8c;
+}
+@media (min-width: 1024px){
+.why-choose .why {
+    margin: 25px auto;
+    box-shadow: 4px 8px 10px #372a72;
+    padding: 40px 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    height: 260px;
+    width: 260px;
+}
 .why-choose p {
     font-size: 17px;
     color: #fff;
@@ -493,17 +558,24 @@ main {
 .why h5 {
     font-size: 1.2rem;
 }
-.why-choose .why p {
-    color: #6d7a8c;
 }
-.why-choose .why {
-    margin: 25px auto;
-    box-shadow: 4px 8px 10px #372a72;
-    padding: 40px 15px;
-    border-radius: 50%;
-    background-color: #fff;
-    height: 260px;
-    width: 260px;
+
+@media (max-width: 1024px){
+    .why-choose .why {
+        box-shadow: 4px 8px 10px #372a72;
+        border-radius: 50%;
+      background-color: #fff;
+        height: 175px;
+        width: 175px;
+        padding: 15px 5px;
+        margin: 25px auto;
+    }
+    .why p {
+        font-size: 0.8rem!important;
+    }
+    .why h5 {
+        font-size: 0.7rem!important;
+    }
 }
 .carousel.pointer-event {
     touch-action: pan-y;
