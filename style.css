@@ -1139,7 +1139,7 @@ main {
 .btn-toggle[aria-expanded="true"] {
     color: rgba(var(--bs-emphasis-color-rgb), 0.85);
 }
-@media (max-width: 380px) {
+@media (max-width: 400px) {
     .img_logo_new {
         width: 100px;
     }
