@@ -1135,14 +1135,15 @@ button, input, optgroup, select, textarea {
 
 
 @media (max-width: 767px) {
-    .SYMPTOMS_TREATMENTS_content {
+    .SYMPTOMS_TREATMENTS_box_height {
         justify-content: center;
         font-family: revert;
         font-weight: 500;
         font-size: 10px;
+       min-height: 100px;
     }
     .ezgif{
-        width: 50px;
+        width: 40px;
     }
     .offset_class {
         margin-left: 0;
@@ -1233,6 +1234,8 @@ button, input, optgroup, select, textarea {
         margin-top: 10px;
     }
 
+    
+
 }
 @media only screen and (max-width: 767px) {
     .hygiene {
@@ -1259,6 +1262,9 @@ button, input, optgroup, select, textarea {
         font-weight: 500;
         padding-top: 12px;
         line-height: 18px;
+    }
+    .SYMPTOMS_TREATMENTS_content_text{
+        font-size: 7px;
     }
 }
 @media (min-width: 767px){
@@ -1289,7 +1295,7 @@ button, input, optgroup, select, textarea {
     }
 }
 @media (min-width: 768px) {
-    .SYMPTOMS_TREATMENTS_content {
+    .SYMPTOMS_TREATMENTS_content_text {
         justify-content: center;
             font-size: 16px;
             line-height: 22px;
@@ -1352,7 +1358,7 @@ button, input, optgroup, select, textarea {
 
 @media (max-width: 780px) {
     .banner {
-        height: 60vh;
+        height: 47vh;
     }
     .btn1 {
         background: #fe235b;
