@@ -1,3 +1,13 @@
+
+body::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Hide scrollbars on Firefox */
+body {
+    scrollbar-width: none !important;
+}
 *,
 .button-50,
 ::after,
@@ -560,6 +570,7 @@ main {
 }
 }
 
+
 @media (max-width: 1024px){
     .why-choose .why {
         box-shadow: 4px 8px 10px #372a72;
@@ -571,11 +582,19 @@ main {
         margin: 25px auto;
     }
     .why p {
-        font-size: 0.8rem!important;
+        font-size: 0.6rem!important;
+       
     }
     .why h5 {
         font-size: 0.7rem!important;
     }
+}
+.review>.container>h2 {
+    color: #0f094f;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
 }
 .carousel.pointer-event {
     touch-action: pan-y;
