@@ -1144,12 +1144,15 @@ main {
         width: 100px;
     }
     .small_sceen_pop {
-        font-size: 10px;
+        font-size: 14px;
     }
 }
-@media (min-width: 380px) {
+@media (min-width: 400px) {
     .img_logo_new {
         width: 150px;
+    }
+    .small_sceen_pop {
+        font-size: 18px;
     }
 }
 .dropdown-toggle {
