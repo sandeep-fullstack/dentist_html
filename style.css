@@ -1127,7 +1127,7 @@ button, input, optgroup, select, textarea {
 
 @media only screen and (max-width: 600px) {
     .caption span {
-        font-size: 17px;
+      
         font-weight: 700;
         text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
@@ -1352,7 +1352,7 @@ button, input, optgroup, select, textarea {
 
 @media (max-width: 780px) {
     .banner {
-        height: 34vh;
+        height: 60vh;
     }
     .btn1 {
         background: #fe235b;
@@ -1408,7 +1408,7 @@ button, input, optgroup, select, textarea {
 
 @media only screen and (max-width: 900px) {
     .caption span {
-        font-size: 20px;
+    
         font-weight: 700;
         text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
@@ -1697,7 +1697,7 @@ button, input, optgroup, select, textarea {
         bottom: 0.25rem;
         left: 15%;
         padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
+        padding-bottom: 0.25rem;
         color: #fff;
         text-align: center;
         width: fit-content;
