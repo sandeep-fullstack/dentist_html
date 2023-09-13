@@ -1088,7 +1088,40 @@ main {
 }
 @media (max-width: 780px) {
     .banner {
-        height: 45vh;
+        height: 67vh;
+    }
+  
+}
+@media (max-width: 780px) {
+    .btn1 {
+        background: #fe235b;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 8px;
+        border-radius: 50px;
+        color: #fff;
+    }
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 1.25rem;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+        width: fit-content;
+    }
+    
+}
+@media (min-width: 781px) {
+    .btn1 {
+        background: #fe235b;
+        font-weight: 700;
+        font-size: 20px;
+        padding: 8px;
+        border-radius: 50px;
+        color: #fff;
     }
 }
 .caption {
@@ -1097,14 +1130,14 @@ main {
 }
 @media only screen and (max-width: 900px) {
     .caption span {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
         text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
 }
 @media only screen and (max-width: 600px) {
     .caption span {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 700;
         text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
@@ -1116,14 +1149,7 @@ main {
         text-shadow: 2px 4px 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
     }
 }
-.btn1 {
-    background: #fe235b;
-    font-weight: 700;
-    font-size: 20px;
-    padding: 8px;
-    border-radius: 50px;
-    color: #fff;
-}
+
 .btn1:hover {
     background: #6610f2;
     color: #fff;
@@ -1141,10 +1167,10 @@ main {
 }
 @media (max-width: 400px) {
     .img_logo_new {
-        width: 100px;
+        width: 80px;
     }
     .small_sceen_pop {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 @media (min-width: 400px) {
@@ -1317,8 +1343,9 @@ main {
         padding: 2px;
         border-radius: 4px;
         outline: 0;
-        width: 100px;
+        width: 109px;
     }
+   
 }
 .cross_icon{
     font-size: 20px;
