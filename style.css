@@ -1070,10 +1070,14 @@ button, input, optgroup, select, textarea {
     color: white;
 }
 
+#menu-about li {
+    list-style: none;
+  }
+  
+
+
+
 /* media querys */ 
-
-
-
 
 @media (max-width: 400px) {
     .img_logo_new {
@@ -1270,6 +1274,7 @@ button, input, optgroup, select, textarea {
          font-family: 'Raleway', sans-serif;
         justify-content: center;
     }
+
 }
 @media (min-width: 767px){
     .counter{
