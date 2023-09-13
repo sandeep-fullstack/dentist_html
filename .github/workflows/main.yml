@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: 68.178.145.103
-        username: gobestdentist@dbvertex.com
+        username: godentist@dbvertex.com
         password: ${{ secrets.gobestdentist_ftp_password }}
 
