@@ -1086,7 +1086,7 @@ color:white
         display: inline-block;
         margin-right: 5px; /* Adjust as needed for spacing */
         color: rgb(237, 237, 243); /* Color of the triangle outline */
-        background-color: transparent !important; /* Forcefully set background to transparent */
+        background-color: transparent; /* Set background to transparent */
         font-size: 14px; /* Adjust as needed for size */
     }
     
@@ -1390,11 +1390,12 @@ color:white
     height: 52vh;
 }
 }
-@media only screen and (min-width: 401px) and (max-width: 780px){
+@media only screen and (min-width: 400px) and (max-width: 780px){
     .banner {
         height: 58vh;
     }
 }
+
 
 @media (max-width: 780px) {
    
