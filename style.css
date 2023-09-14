@@ -1177,6 +1177,21 @@ textarea {
     font-weight: 200;
     margin-right: 10px;
   }
+  .pop_close_button:before{
+    content: '\f00d';
+    font-family: fontAwesome;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+    top: 0;
+    right: 0px;
+    line-height: 48px;
+}
 
   .full-footer .full-footer-in .call-list-box h4,
   .full-footer .full-footer-in .links-box .links-comman-box h4 {
@@ -1355,6 +1370,21 @@ textarea {
     padding: 5px 10px;
     position: relative;
   }
+  .pop_close_button:before{
+    content: '\f00d';
+    font-family: fontAwesome;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+    top: 0;
+    right: -48px;
+    line-height: 48px;
+}
 }
 @media screen and (min-width: 767px) {
   .symt-treatments_h ul li .treat-imgbox img {
