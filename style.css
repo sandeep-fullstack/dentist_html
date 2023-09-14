@@ -1075,7 +1075,26 @@ button, input, optgroup, select, textarea {
   }
   
 
-
+  #menu-about {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu-about li::before {
+    content: '\25B6'; /* Unicode character for a right-pointing triangle */
+    display: inline-block;
+    margin-right: 5px; /* Adjust as needed for spacing */
+}
+.triangle-rotate {
+    transform: rotate(90deg); /* Rotate the triangle by 90 degrees */
+}
+.foote_icon:hover{
+color:white
+}
+.foote_icon{
+    color:#9e806a
+    }
+    
 
 /* media querys */ 
 
@@ -1511,7 +1530,7 @@ button, input, optgroup, select, textarea {
         height: auto;
     }
     .processing-contact-us-bg {
-        margin-top: 12rem;
+        margin-top: 9rem;
     }
     .footer-cta .cta-whitebox {
         width: inherit;

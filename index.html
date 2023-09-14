@@ -1051,7 +1051,7 @@
    </section>
 
 
-   <section class="patient_speaks light_gray_bg">
+   <section class="patient_speaks light_gray_bg" >
       <div class="container_2 mt-5">
          <div class="heading">
             <h2>Case Study</h2>
@@ -1099,14 +1099,14 @@
             </div>
          </div>
       </div>
-      <div style="text-align:center;" class="mt-5">
-         <a href="fullcasestudy.php" class="btn view_more text-white">View More</a>
+      <div style="text-align:center;" class="my-3">
+         <button class="btn view_more text-white mt-1"> View More</button>
       </div>
    </section>
 
 
    <section class="">
-      <div class=" container processing-contact-us-bg mt-5">
+      <div class=" container processing-contact-us-bg">
          <div class="container">
             <div class="row align-items-center py-4">
                <div class="col-lg-12">
@@ -1208,7 +1208,8 @@
             <div class="links-box">
                <div class="links-comman-box  toggle-mbl cll" id="call_tel">
                   <h4>Call us on <a href="tel:+917264889986"
-                        style="color: #ffffff;font-family:sans-sarif;font-size: initial;"> 7264889986</a> <span
+                        style="color: #ffffff;font-family:sans-sarif;font-size: initial;"> 7264889986</a> 
+                        <span
                         id="call_tIcon">+</span></h4>
                   <div class="call-t call_tel_container">
                      <ul>
@@ -1478,21 +1479,21 @@
                      <li><a onclick="ga('send','event','footer-social','click-social','website-social', 1);"
                            target="_blank"
                            href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"
-                           title="Twitter"><i class="fa-brands fa-square-twitter" style="font-size:xx-large"
+                           title="Twitter"><i class="fa-brands fa-square-twitter foote_icon " style="font-size:xx-large;"
                               aria-hidden="true"></i></a></li>
                      <li><a onclick="ga('send','event','footer-social','click-social','website-social', 1);"
                            target="_blank" href="https://www.facebook.com/login/" title="Facebook"><i
-                              class="fa-brands fa-square-facebook" style="font-size:xx-large"
+                              class="fa-brands fa-square-facebook foote_icon" style="font-size:xx-large;"
                               aria-hidden="true"></i></a></li>
                      <li><a onclick="ga('send','event','footer-social','click-social','website-social', 1);"
                            target="_blank" href="https://www.linkedin.com/home" title="Linkedin"><i
-                              class="fa fa-linkedin-square" style="font-size:xx-large" aria-hidden="true"></i></a></li>
+                              class="fa fa-linkedin-square foote_icon" style="font-size:xx-large;" aria-hidden="true"></i></a></li>
                      <li><a onclick="ga('send','event','footer-social','click-social','website-social', 1);"
-                           target="_blank" href="https://www.youtube.com/" title="Youtube"><i class="fa fa-youtube"
-                              style="font-size:xx-large" aria-hidden="true"></i></a></li>
+                           target="_blank" href="https://www.youtube.com/" title="Youtube"><i class="fa fa-youtube foote_icon"
+                              style="font-size:xx-large;" aria-hidden="true"></i></a></li>
                      <li><a onclick="ga('send','event','footer-social','click-social','website-social', 1);"
                            target="_blank" href="https://www.instagram.com/" title="Instagram"><i
-                              class="fa fa-instagram" style="font-size:xx-large" aria-hidden="true"></i></a></li>
+                              class="fa fa-instagram foote_icon" style="font-size:xx-large;" aria-hidden="true"></i></a></li>
                   </ul>
                </div>
                <p class="copyright">All Rights Reserved - 2022, <span>Go Best Dentist</span></p>
@@ -1561,6 +1562,14 @@
 
 </html>
 
+
+<script>
+   $(document).ready(function() {
+    $('#menuToggle').click(function() {
+        $('#menuToggleIcon').toggleClass('triangle-rotate');
+    });
+});
+</script>
 <script>
    function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
@@ -1657,7 +1666,6 @@
    window.addEventListener('resize', handleScroll); // Listen for window resize events
 
 </script>
-
 <script>
    (() => {
       'use strict'
