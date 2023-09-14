@@ -1074,17 +1074,6 @@ button, input, optgroup, select, textarea {
     list-style: none;
   }
   
-
-  #menu-about {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-#menu-about li::before {
-    content: '\25B6'; /* Unicode character for a right-pointing triangle */
-    display: inline-block;
-    margin-right: 5px; /* Adjust as needed for spacing */
-}
 .triangle-rotate {
     transform: rotate(90deg); /* Rotate the triangle by 90 degrees */
 }
@@ -1129,14 +1118,15 @@ color:white
         background-size: cover;
     }
     .cta-whitebox h2 {
-        font-size: 17px!important;
+        font-size: 14px!important;
         font-weight: 600;
         margin-bottom: 12px;
         text-align: center;
         color: #003554;
     }
     .cta-whitebox p {
-        font-size: 12px!important;
+        font-size: 10px!important;
+        text-align: center;
     }
 }
 @media (min-width: 576px){
@@ -1197,7 +1187,11 @@ color:white
     .toggle-mbl #call_tIcon,
     .toggle-mbl #menuToggleIcon {
         float: right !important;
-        font-size: 28px;
+        font-size: 28px; 
+        font-weight: 200;
+    }
+    .links-comman-box{
+        line-height: 0.2;
     }
     .full-footer .full-footer-in .call-list-box h4,
     .full-footer .full-footer-in .links-box .links-comman-box h4 {
@@ -1206,6 +1200,7 @@ color:white
         text-transform: uppercase;
         margin-left: 21px;
         padding-bottom: 15px;
+        font-size: 0.7rem !important;
         border-bottom: 1px solid #f86c04;
 
     }
