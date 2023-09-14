@@ -1216,7 +1216,7 @@
                <div class="links-comman-box  toggle-mbl cll mt-3" id="call_tel">
                   <h4>Call us on <a href="tel:+917264889986"
                         style="color: #ffffff;font-family:sans-sarif;font-size: initial;"> 7264889986</a>
-                     <span id="call_tIcon">+</span>
+                     <span id="call_tIcon"><img src="images/plus-icon.png"  width="15" height="13" alt="plus"></span>
                   </h4>
                   <div class="call-t call_tel_container">
                      <ul id="call_id">
@@ -1227,7 +1227,7 @@
                   </div>
                </div>
                <div class="links-comman-box toggle-mbl h4" id="branchesToggle">
-                  <h4 class="h4">Branches <span id="branchesToggleIcon">+</span></h4>
+                  <h4 class="h4">Branches <span id="branchesToggleIcon"><img src="images/plus-icon.png"  width="15" height="13" alt="plus"></span></h4>
                   <div class="menu-clove-advantage-container">
                      <ul id="menu-clove-advantage" class="menu">
                         <li id="menu-item-12292"
@@ -1296,7 +1296,7 @@
                   </div>
                </div>
                <div class="links-comman-box toggle-mbl" id="menuToggle">
-                  <h4>MENU <span id="menuToggleIcon" class="triangle-icon">+</span></h4>
+                  <h4>MENU <span id="menuToggleIcon" class="triangle-icon"><img src="images/plus-icon.png"  width="15" height="13" alt="plus"></span></h4>
                   <div class="menu-about-container">
                      <ul id="menu-about" class="menu">
                         <li id="menu-item-632"
@@ -1318,7 +1318,7 @@
                   </div>
                </div>
                <div class="links-comman-box toggle-mbl" id="USEFUL_LINKS">
-                  <h4>USEFUL LINKS <span id="USEFUL_LINKS_Icon">+</span></h4>
+                  <h4>USEFUL LINKS <span id="USEFUL_LINKS_Icon"><img src="images/plus-icon.png"  width="15" height="13" alt="plus"></span></h4>
                   <div class="menu-usefull-links-container">
                      <ul id="menu-usefull-links" class="menu">
                         <li id="menu-item-8156"
@@ -1345,7 +1345,7 @@
                   </div>
                </div>
                <div class="links-comman-box toggle-mbl" id="Treatments_footer">
-                  <h4>Treatments <span id="Treatments_footer_Icon">+</span></h4>
+                  <h4>Treatments <span id="Treatments_footer_Icon"><img src="images/plus-icon.png"  width="15" height="13" alt="plus"></span></h4>
                   <div class="menu-join-clove-container">
                      <ul id="menu-join-clove" class="menu">
                         <li id="menu-item-7235"
@@ -1434,7 +1434,7 @@
                   </div>
                </div>
                <div class="links-comman-box toggle-mbl" id="Popular_Searches">
-                  <h4>Popular Searches <span id="Popular_Searches_Icon">+</span></h4>
+                  <h4>Popular Searches <span id="Popular_Searches_Icon"><img src="images/plus-icon.png"  width="15" height="13" alt="plus"></span></h4>
                   <div class="call-t Popular_Searches_contanier">
                      <ul class="Popular_Searches_contanier_ul" id="Popular_Searches_contanier_ul">
                         <li id="menu-item-7236"
@@ -1734,11 +1734,11 @@
 
    call_tToggle.addEventListener("click", function () {
       if (call_tel_container.style.display === "none" || call_tel_container.style.display === "") {
-         call_tel_container.style.display = "block";
-         call_t.textContent = "-";
+         call_tel_container.style.display = "block"; 
+         call_t.innerHTML = '<img src="images/minus-icon.png"  width="15"  alt="plus">';
       } else {
          call_tel_container.style.display = "none";
-         call_t.textContent = "+";
+         call_t.innerHTML = '<img src="images/plus-icon.png"  width="15" height="13" alt="plus">';
       }
    });
 
@@ -1750,10 +1750,10 @@
    branchesToggle.addEventListener("click", function () {
       if (branchesContainer.style.display === "none" || branchesContainer.style.display === "") {
          branchesContainer.style.display = "block";
-         branchesToggleIcon.textContent = "-";
+         branchesToggleIcon.innerHTML = '<img src="images/minus-icon.png"  width="15"  alt="plus">';
       } else {
          branchesContainer.style.display = "none";
-         branchesToggleIcon.textContent = "+";
+         branchesToggleIcon.innerHTML = '<img src="images/plus-icon.png"  width="15" height="13" alt="plus">';
       }
    });
 
@@ -1765,10 +1765,10 @@
    menuToggle.addEventListener("click", function () {
       if (menuContainer.style.display === "none" || menuContainer.style.display === "") {
          menuContainer.style.display = "block";
-         menuToggleIcon.textContent = "-";
+         menuToggleIcon.innerHTML = '<img src="images/minus-icon.png"  width="15"  alt="plus">';
       } else {
          menuContainer.style.display = "none";
-         menuToggleIcon.textContent = "+";
+         menuToggleIcon.innerHTML = '<img src="images/plus-icon.png"  width="15" height="13" alt="plus">';
       }
    });
 
@@ -1779,10 +1779,10 @@
    USEFUL_LINKS.addEventListener("click", function () {
       if (menuusefulllinkscontainer.style.display === "none" || menuusefulllinkscontainer.style.display === "") {
          menuusefulllinkscontainer.style.display = "block";
-         USEFUL_LINKSIcon.textContent = "-";
+         USEFUL_LINKSIcon.innerHTML = '<img src="images/minus-icon.png"  width="15"  alt="plus">';
       } else {
          menuusefulllinkscontainer.style.display = "none";
-         USEFUL_LINKSIcon.textContent = "+";
+         USEFUL_LINKSIcon.innerHTML = '<img src="images/plus-icon.png"  width="15" height="13" alt="plus">';
       }
    });
 
@@ -1794,10 +1794,10 @@
    Treatments_footer.addEventListener("click", function () {
       if (menujoinclovecontainer.style.display === "none" || menujoinclovecontainer.style.display === "") {
          menujoinclovecontainer.style.display = "block";
-         Treatments_footer_Icon.textContent = "-";
+         Treatments_footer_Icon.innerHTML = '<img src="images/minus-icon.png"  width="15" alt="plus">';
       } else {
          menujoinclovecontainer.style.display = "none";
-         Treatments_footer_Icon.textContent = "+";
+         Treatments_footer_Icon.innerHTML = '<img src="images/plus-icon.png"  width="15" height="13" alt="plus">';
       }
    });
 
@@ -1808,10 +1808,10 @@
    Popular_Searches.addEventListener("click", function () {
       if (Popular_Searches_contanier.style.display === "none" || Popular_Searches_contanier.style.display === "") {
          Popular_Searches_contanier.style.display = "block";
-         Popular_Searches_Icon.textContent = "-";
+         Popular_Searches_Icon.innerHTML = '<img src="images/minus-icon.png"  width="15"  alt="plus">';
       } else {
          Popular_Searches_contanier.style.display = "none";
-         Popular_Searches_Icon.textContent = "+";
+         Popular_Searches_Icon.innerHTML = '<img src="images/plus-icon.png"  width="15" height="13" alt="plus">';
       }
    });
 </script>

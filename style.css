@@ -699,7 +699,6 @@ main {
 
 .full-footer .full-footer-in .call-list-box h4,
 .full-footer .full-footer-in .links-box .links-comman-box h4 {
-  margin-bottom: 25px;
   color: #f86c04;
   font-weight: 600;
   text-transform: uppercase;
@@ -1062,7 +1061,7 @@ textarea {
 #USEFUL_LINKS_Icon,
 #Treatments_footer_Icon,
 #Popular_Searches_Icon {
-  color: white;
+  color: #afa8a8;
 }
 
 .foote_icon:hover {
@@ -1173,9 +1172,9 @@ textarea {
   .toggle-mbl #call_tIcon,
   .toggle-mbl #menuToggleIcon {
     float: right !important;
-    font-size: 28px;
     font-weight: 200;
     margin-right: 10px;
+    color: #afa8a8;
   }
   .pop_close_button:before{
     content: '\f00d';
@@ -1199,7 +1198,6 @@ textarea {
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 21px;
-    padding-bottom: 15px;
     font-size: 0.7rem !important;
     border-bottom: 1px solid #f86c04;
   }
