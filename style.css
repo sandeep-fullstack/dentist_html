@@ -711,7 +711,7 @@ main {
 }
 
 .full-footer .full-footer-in .links-box .links-comman-box ul li a {
-  color: #ceb3a0;
+  color: white;
 }
 
 .phone-btn i {
@@ -1073,6 +1073,21 @@ textarea {
 
 .banner {
 }
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 0rem; 
+  pointer-events: none;
+  margin-top: 98px;
+}
 
 /* media querys */
 
@@ -1116,12 +1131,54 @@ textarea {
     font-size: 10px !important;
     text-align: center;
   }
+  .pop_close_button:before{
+    content: '\f00d';
+    font-family: fontAwesome;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+    top: 0;
+    right: 0px;
+    line-height: 48px;
+}
+
+
 }
 @media (min-width: 576px) {
   .cta-whitebox h2 {
     color: #003554;
     text-align: center;
   }
+  .pop_close_button:before{
+    content: '\f00d';
+    font-family: fontAwesome;
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+    top: -24px;
+    right: -72px;
+    line-height: 48px;
+}
+.sidebar-contact {
+  transform: translateY(-50%);
+  width: 350px;
+  height: auto;
+  padding: 23px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0,0,0,.5);
+  box-sizing: border-box;
+  transition: 0.5s;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -1176,21 +1233,7 @@ textarea {
     margin-right: 10px;
     color: #afa8a8;
   }
-  .pop_close_button:before{
-    content: '\f00d';
-    font-family: fontAwesome;
-    font-size: 18px;
-    color: #fff;
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    text-align: center;
-    cursor: pointer;
-    background: #f00;
-    top: 0;
-    right: 0px;
-    line-height: 48px;
-}
+ 
 
   .full-footer .full-footer-in .call-list-box h4,
   .full-footer .full-footer-in .links-box .links-comman-box h4 {
@@ -1250,11 +1293,18 @@ textarea {
   }
   .full-footer .full-footer-in .links-box .links-comman-box ul li {
     font-size: 14px;
-    color: #ceb3a0;
+    color: white;
     padding: 5px 0px;
     position: relative;
     margin-left: 20px;
   }
+  .full-footer .full-footer-in .links-box {
+    padding: 0 20px;
+}
+.footer-bottom-box {
+  padding: 0 20px;
+}
+
 }
 @media only screen and (max-width: 767px) {
   .hygiene {
@@ -1368,21 +1418,7 @@ textarea {
     padding: 5px 10px;
     position: relative;
   }
-  .pop_close_button:before{
-    content: '\f00d';
-    font-family: fontAwesome;
-    font-size: 18px;
-    color: #fff;
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    text-align: center;
-    cursor: pointer;
-    background: #f00;
-    top: 0;
-    right: -48px;
-    line-height: 48px;
-}
+
 }
 @media screen and (min-width: 767px) {
   .symt-treatments_h ul li .treat-imgbox img {
@@ -1491,6 +1527,7 @@ textarea {
     border-radius: 50px;
     color: #fff;
   }
+  
 }
 
 @media (max-width: 850px) {
@@ -1507,6 +1544,8 @@ textarea {
     padding-left: 0%;
     padding-right: 0%;
   }
+
+  
 }
 
 @media only screen and (max-width: 900px) {
