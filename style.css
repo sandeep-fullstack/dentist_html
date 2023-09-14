@@ -1175,6 +1175,7 @@ textarea {
     float: right !important;
     font-size: 28px;
     font-weight: 200;
+    margin-right: 10px;
   }
 
   .full-footer .full-footer-in .call-list-box h4,
