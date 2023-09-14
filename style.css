@@ -1075,16 +1075,23 @@ button, input, optgroup, select, textarea {
     list-style: none;
   }
   
-.triangle-rotate {
-    transform: rotate(90deg); /* Rotate the triangle by 90 degrees */
-}
 .foote_icon:hover{
 color:white
 }
 .foote_icon{
     color:#9e806a
     }
+    #menu-about li::before {
+        content: '\25B6'; /* Unicode character for a right-pointing triangle */
+        display: inline-block;
+        margin-right: 5px; /* Adjust as needed for spacing */
+        color: rgb(237, 237, 243); /* Color of the triangle outline */
+        background-color: transparent !important; /* Forcefully set background to transparent */
+        font-size: 14px; /* Adjust as needed for size */
+    }
     
+    .banner {
+    }
 
 /* media querys */ 
 
@@ -1191,9 +1198,7 @@ color:white
         font-size: 28px; 
         font-weight: 200;
     }
-    .links-comman-box{
-     
-    }
+ 
     .full-footer .full-footer-in .call-list-box h4,
     .full-footer .full-footer-in .links-box .links-comman-box h4 {
         color: #f86c04;
@@ -1380,10 +1385,19 @@ color:white
 }
 
 
-@media (max-width: 780px) {
+@media  only screen and  (max-width: 400px){
+.banner {
+    height: 52vh;
+}
+}
+@media only screen and (min-width: 401px) and (max-width: 780px){
     .banner {
-        height: 47vh;
+        height: 58vh;
     }
+}
+
+@media (max-width: 780px) {
+   
     .btn1 {
         background: #fe235b;
         font-weight: 700;
