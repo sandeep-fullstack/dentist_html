@@ -17,7 +17,7 @@ body {
   cursor: pointer;
 }
 .navbar-expand-xl .navbar-toggler {
-  display: block;
+  
 }
 .container_navbar {
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 7px;
@@ -1253,7 +1253,6 @@ textarea {
     color: #afa8a8;
   }
  
-
   .full-footer .full-footer-in .call-list-box h4,
   .full-footer .full-footer-in .links-box .links-comman-box h4 {
     color: #f86c04;
@@ -1323,6 +1322,14 @@ textarea {
 .footer-bottom-box {
   padding: 0 20px;
 }
+.navbar_background_color_button{
+  margin-top: 28px;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
 
 }
 @media only screen and (max-width: 767px) {
