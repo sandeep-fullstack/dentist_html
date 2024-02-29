@@ -17,7 +17,7 @@ body {
   cursor: pointer;
 }
 .navbar-expand-xl .navbar-toggler {
-  
+
 }
 .container_navbar {
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 7px;
@@ -1084,7 +1084,7 @@ textarea {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0rem; 
+  margin: 0rem;
   pointer-events: none;
   margin-top: 98px;
 }
@@ -1252,7 +1252,7 @@ textarea {
     margin-right: 10px;
     color: #afa8a8;
   }
- 
+
   .full-footer .full-footer-in .call-list-box h4,
   .full-footer .full-footer-in .links-box .links-comman-box h4 {
     color: #f86c04;
@@ -1329,8 +1329,6 @@ textarea {
   margin-right: auto;
   margin-bottom: auto;
 }
-
-
 }
 @media only screen and (max-width: 767px) {
   .hygiene {
@@ -1553,7 +1551,7 @@ textarea {
     border-radius: 50px;
     color: #fff;
   }
-  
+
 }
 
 @media (max-width: 850px) {
@@ -1571,7 +1569,7 @@ textarea {
     padding-right: 0%;
   }
 
-  
+
 }
 
 @media only screen and (max-width: 900px) {
